@@ -1,0 +1,17 @@
+@charset "utf-8";
+/* CSS Document */
+body {
+   background: rgba(242,231,96,0.2);/* Màu xanh dương */
+    color: white; /* Màu chữ trắng */
+    font-family: Arial, sans-serif;
+    text-align: center;
+    padding: 50px;
+}
+.text-tim{
+	color: #a587fe;
+}
+.p{
+	margin: 10px;
+	padding: 0;
+	color: #666;line-height: 1.5em; 
+}

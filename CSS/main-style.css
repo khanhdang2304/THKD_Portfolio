@@ -1,0 +1,169 @@
+@charset "utf-8";
+/* CSS Document */
+*{scroll-behavior: smooth}
+body{
+	font-family: Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif";
+	font-size: 16px;
+	margin: 0;
+}
+p{
+	margin: 10px;
+	padding: 0;
+	color: #666;line-height: 1.5em; }
+
+section { min-height: 100vh}
+#hero
+{
+	margin-top: 40px;
+	background: rgba(242,231,96,0.2);
+	background-position: top 20% right 40%;
+	background-repeat: no-repeat;
+}
+#about{
+	max-height: inherit;
+	margin: 0px ;
+	background: rgba(231,103,224,0.1);
+	background-position: top 20% right 40%;
+	background-repeat: no-repeat;
+}
+#projects{
+	margin: 0px ;
+	background: rgba(242,231,96,0.2);
+	background-position: top 20% righ
+}
+#myservices{
+	margin: 0px;
+	background: rgba(231,103,224,0.1);
+	background-position: top 20% right 40%;
+	background-repeat: no-repeat;
+}
+.bg-primary{	background-color: #fee087 }
+.text-primary{ color:#a587fe}
+.text-purple{ color: #a587fe}
+.icon-ss a 
+{
+	color: white;
+	text-decoration: none;
+	background: #a587fe;
+	margin:10px;	
+	padding: 0;
+	border-radius:80%;
+	text-align: center;
+	width: 40px; 
+	height: 40px;
+	line-height: 40px;
+	display: inline-block
+}
+.icon-ss a:hover { background: #a587fe} 
+header
+{ 
+	background: rgba(254,224,135,0.4);
+	box-shadow: 0 5px 5px rgba(0,0,0,0.1);
+	position: fixed;
+	top: 0;
+	width: 100%;
+	z-index: 999999;
+	height: 60px;
+}
+.content{margin-top: 60px}
+h1{
+	margin: 0;
+	padding: 0;
+	font-size: 24px
+}
+
+
+/* Hình tròn */
+.circle {
+    position: absolute;
+    width: 90px;
+    height: 90px;
+    background-color: rgb(165,135,254);
+    border-radius: 50%;
+    top: 15%;
+    left: 10%;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3); /* Đổ bóng tạo cảm giác lơ lửng */
+    animation: float 6s ease-in-out infinite; /* Hiệu ứng lơ lửng */
+}
+
+/* Hình vuông */
+.square {
+    position: absolute;
+    width: 80px;
+    height: 80px;
+    background-color: rgb(254,135,165);
+    top: 80%;
+    left: 20%;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3); /* Đổ bóng tạo cảm giác lơ lửng */
+    animation: float 8s ease-in-out infinite; /* Hiệu ứng lơ lửng */
+}
+
+/* Hình tam giác */
+.triangle {
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-left: 60px solid transparent;
+    border-right: 60px solid transparent;
+    border-bottom: 100px solid rgb(254,224,135);
+    top: 90%;
+    right: 40%;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3); /* Đổ bóng tạo cảm giác lơ lửng */
+    animation: float 7s ease-in-out infinite; /* Hiệu ứng lơ lửng */
+}
+
+/* Hiệu ứng lơ lửng */
+@keyframes float {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-20px); /* Di chuyển lên */
+    }
+    100% {
+        transform: translateY(0); /* Quay lại vị trí ban đầu */
+    }
+}
+#hero .circle{
+	top: 45%;
+	left: 40px;
+}
+#hero .square{
+	bottom: 20px;
+	left: 1500px;
+}
+#projects.circle{
+	top: 80px;
+	right: 350px;
+}
+/* Định dạng cho nút "Liên hệ" */
+.contact-btn {
+     text-align: center; /* Căn giữa nội dung bên trong */
+    height: 40px; /* Chiều cao của container */
+    border: 1px solid #ddd; /* Viền để dễ nhìn */
+    display: flex; /* Sử dụng Flexbox */
+    justify-content: center; /* Căn giữa ngang */
+    align-items: center; /* Căn giữa dọc */
+	padding: 20px 20px; /* Thêm khoảng đệm cho nút */
+    background-color: #A587FE; /* Màu nền xanh dương */
+    color: #fff; /* Màu chữ trắng */
+    font-size: 20px; /* Cỡ chữ */
+    font-weight: bold; /* In đậm chữ */
+    text-decoration: none; /* Bỏ gạch chân cho liên kết */
+    border-radius: 40px; /* Bo tròn các góc của nút */
+    transition: background-color 0.5s ease, transform 0.5s ease; /* Hiệu ứng chuyển màu và thay đổi khi hover */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Đổ bóng nhẹ cho nút */
+}
+
+/* Hiệu ứng khi hover qua nút */
+.contact-btn:hover {
+    background-color: #612CFD ;/* Thay đổi màu nền khi hover */
+    transform: scale(1.05); /* Tăng kích thước nhẹ khi hover */
+}
+
+/* Hiệu ứng khi bấm vào nút */
+.contact-btn:active {
+    background-color: #EC8BFE; /* Màu nền khi nhấp chuột */
+    transform: scale(0.98); /* Thu nhỏ nút khi nhấp */
+}
+
